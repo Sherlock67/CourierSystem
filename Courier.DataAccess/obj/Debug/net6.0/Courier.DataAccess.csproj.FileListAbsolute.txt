@@ -1,0 +1,14 @@
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\bin\Debug\net6.0\Courier.DataAccess.deps.json
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\bin\Debug\net6.0\Courier.DataAccess.runtimeconfig.json
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\bin\Debug\net6.0\Courier.DataAccess.dll
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\bin\Debug\net6.0\Courier.DataAccess.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.AssemblyInfo.cs
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.dll
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\refint\Courier.DataAccess.dll
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\Courier.DataAccess.genruntimeconfig.cache
+C:\Users\USER\source\repos\Courier.API\Courier.DataAccess\obj\Debug\net6.0\ref\Courier.DataAccess.dll

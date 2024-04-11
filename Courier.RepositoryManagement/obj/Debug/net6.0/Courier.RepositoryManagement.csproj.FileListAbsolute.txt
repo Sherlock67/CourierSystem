@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\Courier.RepositoryManagement.deps.json
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\Courier.RepositoryManagement.dll
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\Courier.RepositoryManagement.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\Courier.DataAccess.dll
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\Courier.DataAccess.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.AssemblyInfo.cs
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.csproj.CopyComplete
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.dll
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\refint\Courier.RepositoryManagement.dll
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\ref\Courier.RepositoryManagement.dll
