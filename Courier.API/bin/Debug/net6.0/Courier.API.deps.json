@@ -471,7 +471,8 @@
       },
       "Courier.Business/1.0.0": {
         "dependencies": {
-          "Courier.RepositoryManagement": "1.0.0"
+          "Courier.RepositoryManagement": "1.0.0",
+          "Courier.ViewModel": "1.0.0"
         },
         "runtime": {
           "Courier.Business.dll": {}
@@ -492,6 +493,11 @@
         },
         "runtime": {
           "Courier.RepositoryManagement.dll": {}
+        }
+      },
+      "Courier.ViewModel/1.0.0": {
+        "runtime": {
+          "Courier.ViewModel.dll": {}
         }
       }
     }
@@ -849,6 +855,11 @@
       "sha512": ""
     },
     "Courier.RepositoryManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Courier.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

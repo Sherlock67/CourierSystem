@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Courier.RepositoryManagement\Courier.RepositoryManagement.csproj" />
+    <ProjectReference Include="..\Courier.ViewModel\Courier.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

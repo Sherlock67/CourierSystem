@@ -761,6 +761,16 @@
         "runtime": {
           "bin/placeholder/Courier.RepositoryManagement.dll": {}
         }
+      },
+      "Courier.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Courier.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Courier.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -1935,11 +1945,17 @@
       "type": "project",
       "path": "../Courier.RepositoryManagement/Courier.RepositoryManagement.csproj",
       "msbuildProject": "../Courier.RepositoryManagement/Courier.RepositoryManagement.csproj"
+    },
+    "Courier.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Courier.ViewModel/Courier.ViewModel.csproj",
+      "msbuildProject": "../Courier.ViewModel/Courier.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Courier.RepositoryManagement >= 1.0.0"
+      "Courier.RepositoryManagement >= 1.0.0",
+      "Courier.ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1977,6 +1993,9 @@
           "projectReferences": {
             "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.RepositoryManagement\\Courier.RepositoryManagement.csproj": {
               "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.RepositoryManagement\\Courier.RepositoryManagement.csproj"
+            },
+            "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.ViewModel\\Courier.ViewModel.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.ViewModel\\Courier.ViewModel.csproj"
             }
           }
         }

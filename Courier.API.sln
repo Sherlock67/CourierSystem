@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courier.API", "Courier.API\Courier.API.csproj", "{2E279E6E-014C-4CF7-8537-9F826E2E67F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courier.API", "Courier.API\Courier.API.csproj", "{2E279E6E-014C-4CF7-8537-9F826E2E67F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courier.Business", "Courier.Business\Courier.Business.csproj", "{1CCF48F9-12C6-407F-8AD1-DCA8FF8D105C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courier.Business", "Courier.Business\Courier.Business.csproj", "{1CCF48F9-12C6-407F-8AD1-DCA8FF8D105C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courier.DataAccess", "Courier.DataAccess\Courier.DataAccess.csproj", "{EC805633-6AC6-4D4F-98A4-91D88AD711E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courier.DataAccess", "Courier.DataAccess\Courier.DataAccess.csproj", "{EC805633-6AC6-4D4F-98A4-91D88AD711E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courier.RepositoryManagement", "Courier.RepositoryManagement\Courier.RepositoryManagement.csproj", "{AF30A078-3A30-43CB-99BB-2B091C6B873C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courier.RepositoryManagement", "Courier.RepositoryManagement\Courier.RepositoryManagement.csproj", "{AF30A078-3A30-43CB-99BB-2B091C6B873C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courier.ViewModel", "Courier.ViewModel\Courier.ViewModel.csproj", "{A3EC9AC4-6801-48A7-A027-6098ABA6CFF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AF30A078-3A30-43CB-99BB-2B091C6B873C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF30A078-3A30-43CB-99BB-2B091C6B873C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF30A078-3A30-43CB-99BB-2B091C6B873C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3EC9AC4-6801-48A7-A027-6098ABA6CFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3EC9AC4-6801-48A7-A027-6098ABA6CFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3EC9AC4-6801-48A7-A027-6098ABA6CFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3EC9AC4-6801-48A7-A027-6098ABA6CFF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

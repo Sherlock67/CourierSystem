@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\bin\Debug\net6.0\Courier.ViewModel.deps.json
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\bin\Debug\net6.0\Courier.ViewModel.dll
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\bin\Debug\net6.0\Courier.ViewModel.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\Courier.ViewModel.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\Courier.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\Courier.ViewModel.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\Courier.ViewModel.AssemblyInfo.cs
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\Courier.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\Courier.ViewModel.dll
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\refint\Courier.ViewModel.dll
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\Courier.ViewModel.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.ViewModel\obj\Debug\net6.0\ref\Courier.ViewModel.dll
