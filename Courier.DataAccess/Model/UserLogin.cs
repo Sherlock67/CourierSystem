@@ -22,6 +22,6 @@ namespace Courier.DataAccess.Model
 
         public bool? IsActive { get; set; }
 
-        //public virtual Customer? Customer { get; set; }
+        public virtual Customer? Customer { get; set; }
     }
 }

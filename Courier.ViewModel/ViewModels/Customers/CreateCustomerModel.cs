@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Courier.ViewModel.ViewModels
+namespace Courier.ViewModel.ViewModels.Customers
 {
     public class CreateCustomerModel
     {

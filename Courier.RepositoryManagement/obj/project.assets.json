@@ -748,6 +748,16 @@
         "runtime": {
           "bin/placeholder/Courier.DataAccess.dll": {}
         }
+      },
+      "Courier.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Courier.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Courier.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -1917,11 +1927,17 @@
       "type": "project",
       "path": "../Courier.DataAccess/Courier.DataAccess.csproj",
       "msbuildProject": "../Courier.DataAccess/Courier.DataAccess.csproj"
+    },
+    "Courier.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Courier.ViewModel/Courier.ViewModel.csproj",
+      "msbuildProject": "../Courier.ViewModel/Courier.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Courier.DataAccess >= 1.0.0"
+      "Courier.DataAccess >= 1.0.0",
+      "Courier.ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1959,6 +1975,9 @@
           "projectReferences": {
             "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.DataAccess\\Courier.DataAccess.csproj": {
               "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.DataAccess\\Courier.DataAccess.csproj"
+            },
+            "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.ViewModel\\Courier.ViewModel.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.ViewModel\\Courier.ViewModel.csproj"
             }
           }
         }

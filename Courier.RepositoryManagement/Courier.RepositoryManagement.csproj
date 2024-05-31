@@ -8,10 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Courier.DataAccess\Courier.DataAccess.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="UnitOfWork\Interfaces\" />
+    <ProjectReference Include="..\Courier.ViewModel\Courier.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

@@ -753,7 +753,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Courier.DataAccess": "1.0.0"
+          "Courier.DataAccess": "1.0.0",
+          "Courier.ViewModel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Courier.RepositoryManagement.dll": {}

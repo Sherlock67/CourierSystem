@@ -263,6 +263,9 @@
             "projectReferences": {
               "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.DataAccess\\Courier.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.DataAccess\\Courier.DataAccess.csproj"
+              },
+              "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.ViewModel\\Courier.ViewModel.csproj": {
+                "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.ViewModel\\Courier.ViewModel.csproj"
               }
             }
           }

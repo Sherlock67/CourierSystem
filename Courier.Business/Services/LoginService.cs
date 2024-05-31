@@ -1,11 +1,17 @@
 ﻿using Courier.Business.Interface.ILogin;
+using Courier.DataAccess.Model;
 using Courier.RepositoryManagement.UnitOfWork.Interfaces;
 using Courier.ViewModel.ViewModels;
+using Courier.ViewModel.ViewModels.Customers;
+using Courier.ViewModel.ViewModels.Menu;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Courier.Business.Services
 {
@@ -21,7 +27,7 @@ namespace Courier.Business.Services
         {
             _unitOfWork = unitOfWork;
         }
-        public Task<object> ChangePassword(LoginModel userInfo)
+        public async Task<object> ChangePassword(LoginModel userInfo)
         {
             throw new NotImplementedException();
         }
@@ -36,9 +42,10 @@ namespace Courier.Business.Services
             throw new NotImplementedException();
         }
 
-        public Task<object> LoginUser(Login credential, string userAgent, string remoteIpAddress)
+        public async Task<object> LoginUser(Login credential, string userAgent, string remoteIpAddress)
         {
             throw new NotImplementedException();
+
         }
 
         public Task<object> SendEmailToChangePassword(LoginModel userInfo, string userAgent, string remoteIpAddress)
