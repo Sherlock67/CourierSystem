@@ -18,5 +18,6 @@ namespace Courier.DataAccess.Data
         }
         public DbSet<UserLogin> UserLogins { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }

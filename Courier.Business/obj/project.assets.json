@@ -735,6 +735,19 @@
           }
         }
       },
+      "API.Settings/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Courier.ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/API.Settings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/API.Settings.dll": {}
+        }
+      },
       "Courier.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -753,6 +766,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "API.Settings": "1.0.0",
           "Courier.DataAccess": "1.0.0",
           "Courier.ViewModel": "1.0.0"
         },
@@ -1936,6 +1950,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "API.Settings/1.0.0": {
+      "type": "project",
+      "path": "../API.Settings/API.Settings.csproj",
+      "msbuildProject": "../API.Settings/API.Settings.csproj"
     },
     "Courier.DataAccess/1.0.0": {
       "type": "project",

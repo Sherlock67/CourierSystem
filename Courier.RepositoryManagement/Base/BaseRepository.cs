@@ -18,19 +18,26 @@ namespace Courier.RepositoryManagement.Base
             _dbSet = dbContext.Set<T>();
         }
 
-        public Task<T> AddAsync(T entity)
+        public async Task<T> AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            await _dbSet.AddAsync(entity);
+            return entity;
         }
 
         public Task DeleteAsync(T entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
+            return Task.CompletedTask;
         }
 
         public Task DeleteManyAsync(System.Linq.Expressions.Expression<Func<T, bool>> filter)
         {
-            throw new NotImplementedException();
+            var entities = _dbSet.Where(filter);
+
+            _dbSet.RemoveRange(entities);
+
+            return Task.CompletedTask;
+            
         }
 
         public Task<IEnumerable<T>> GetAllAsync()
@@ -38,14 +45,41 @@ namespace Courier.RepositoryManagement.Base
             throw new NotImplementedException();
         }
 
-        public Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _dbSet.FindAsync(id);
         }
 
-        public Task<IEnumerable<T>> GetManyAsync(System.Linq.Expressions.Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, int? top = null, int? skip = null, params string[] includeProperties)
+        public async Task<IEnumerable<T>> GetManyAsync(System.Linq.Expressions.Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, int? top = null, int? skip = null, params string[] includeProperties)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = _dbSet;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            if (includeProperties.Length > 0)
+            {
+                query = includeProperties.Aggregate(query, (theQuery, theInclude) => theQuery.Include(theInclude));
+            }
+
+            if (orderBy != null)
+            {
+                query = orderBy(query);
+            }
+
+            if (skip.HasValue)
+            {
+                query = query.Skip(skip.Value);
+            }
+
+            if (top.HasValue)
+            {
+                query = query.Take(top.Value);
+            }
+
+            return await query.ToListAsync();
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Courier.RepositoryManagement.UnitOfWork.Interfaces
     public interface IUnitOfWork
     {
         ILoginRepository UserLoginRepository { get; }
+        ICustomerRepository CustomerRepository { get; }
         Task CompleteAsync();
     }
 }

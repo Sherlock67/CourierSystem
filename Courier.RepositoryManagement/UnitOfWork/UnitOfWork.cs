@@ -20,8 +20,11 @@ namespace Courier.RepositoryManagement.UnitOfWork
         }
 
         private UserLoginRepository _loginRepository;
+        private CustomerRepository _customerRepository;
         public ILoginRepository UserLoginRepository => _loginRepository ?? (_loginRepository = new UserLoginRepository(_dbContext));
-        
+
+        public ICustomerRepository CustomerRepository => _customerRepository ?? (_customerRepository = new CustomerRepository(_dbContext));
+
         public async Task CompleteAsync()
         {
             await _dbContext.SaveChangesAsync();
