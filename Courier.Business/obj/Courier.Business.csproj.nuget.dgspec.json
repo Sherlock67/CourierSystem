@@ -96,11 +96,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj": {
-                "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -167,9 +163,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj": {
-                "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj"
-              },
               "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Utility\\API.Utility.csproj": {
                 "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Utility\\API.Utility.csproj"
               },

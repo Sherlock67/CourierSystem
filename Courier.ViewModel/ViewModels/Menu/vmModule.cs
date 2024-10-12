@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Courier.ViewModel.ViewModels.Menu
 {
-    public class vmModule 
+    public class vmModule : CommonData
     {
         public int ModuleId { get; set; }
 

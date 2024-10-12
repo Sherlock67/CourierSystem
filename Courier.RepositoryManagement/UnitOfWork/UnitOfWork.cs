@@ -18,7 +18,8 @@ namespace Courier.RepositoryManagement.UnitOfWork
         {
             _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
         }
-
+        private ModuleRepository _moduleRepository;
+        public IModuleRepository ModuleRepository => _moduleRepository ?? (_moduleRepository = new ModuleRepository(_dbContext));
         private UserLoginRepository _loginRepository;
         private CustomerRepository _customerRepository;
         public ILoginRepository UserLoginRepository => _loginRepository ?? (_loginRepository = new UserLoginRepository(_dbContext));
