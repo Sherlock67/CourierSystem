@@ -68,6 +68,28 @@ namespace Courier.DataAccess.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("Courier.DataAccess.Model.Role", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"), 1L, 1);
+
+                    b.Property<bool?>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("RoleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Sequence")
+                        .HasColumnType("int");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("Courier.DataAccess.Model.UserLogin", b =>
                 {
                     b.Property<int?>("LoginId")
@@ -100,9 +122,11 @@ namespace Courier.DataAccess.Migrations
 
             modelBuilder.Entity("Courier.DataAccess.Model.UserLogin", b =>
                 {
-                    b.HasOne("Courier.DataAccess.Model.Customer", null)
+                    b.HasOne("Courier.DataAccess.Model.Customer", "Customer")
                         .WithMany("UserLogins")
                         .HasForeignKey("CustomerId");
+
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("Courier.DataAccess.Model.Customer", b =>

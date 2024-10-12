@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\Courier.API\API.Settings\bin\Debug\net6.0\API.Settings.deps.json
+C:\Users\USER\source\repos\Courier.API\API.Settings\bin\Debug\net6.0\API.Settings.dll
+C:\Users\USER\source\repos\Courier.API\API.Settings\bin\Debug\net6.0\API.Settings.pdb
+C:\Users\USER\source\repos\Courier.API\API.Settings\bin\Debug\net6.0\Courier.ViewModel.dll
+C:\Users\USER\source\repos\Courier.API\API.Settings\bin\Debug\net6.0\Courier.ViewModel.pdb
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.AssemblyInfo.cs
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.csproj.CopyComplete
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.dll
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\refint\API.Settings.dll
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\API.Settings.pdb
+C:\Users\USER\source\repos\Courier.API\API.Settings\obj\Debug\net6.0\ref\API.Settings.dll

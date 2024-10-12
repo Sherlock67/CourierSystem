@@ -868,10 +868,26 @@
           "bin/placeholder/API.Settings.dll": {}
         }
       },
+      "API.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "API.Settings": "1.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.8.0"
+        },
+        "compile": {
+          "bin/placeholder/API.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/API.Utility.dll": {}
+        }
+      },
       "Courier.Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "API.Settings": "1.0.0",
+          "API.Utility": "1.0.0",
           "Courier.RepositoryManagement": "1.0.0",
           "Courier.ViewModel": "1.0.0"
         },
@@ -2245,6 +2261,11 @@
       "type": "project",
       "path": "../API.Settings/API.Settings.csproj",
       "msbuildProject": "../API.Settings/API.Settings.csproj"
+    },
+    "API.Utility/1.0.0": {
+      "type": "project",
+      "path": "../API.Utility/API.Utility.csproj",
+      "msbuildProject": "../API.Utility/API.Utility.csproj"
     },
     "Courier.Business/1.0.0": {
       "type": "project",

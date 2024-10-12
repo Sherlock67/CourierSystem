@@ -748,6 +748,20 @@
           "bin/placeholder/API.Settings.dll": {}
         }
       },
+      "API.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "API.Settings": "1.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.8.0"
+        },
+        "compile": {
+          "bin/placeholder/API.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/API.Utility.dll": {}
+        }
+      },
       "Courier.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1956,6 +1970,11 @@
       "path": "../API.Settings/API.Settings.csproj",
       "msbuildProject": "../API.Settings/API.Settings.csproj"
     },
+    "API.Utility/1.0.0": {
+      "type": "project",
+      "path": "../API.Utility/API.Utility.csproj",
+      "msbuildProject": "../API.Utility/API.Utility.csproj"
+    },
     "Courier.DataAccess/1.0.0": {
       "type": "project",
       "path": "../Courier.DataAccess/Courier.DataAccess.csproj",
@@ -1974,6 +1993,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "API.Settings >= 1.0.0",
+      "API.Utility >= 1.0.0",
       "Courier.RepositoryManagement >= 1.0.0",
       "Courier.ViewModel >= 1.0.0"
     ]
@@ -2011,6 +2032,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj"
+            },
+            "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Utility\\API.Utility.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Utility\\API.Utility.csproj"
+            },
             "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.RepositoryManagement\\Courier.RepositoryManagement.csproj": {
               "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\Courier.RepositoryManagement\\Courier.RepositoryManagement.csproj"
             },

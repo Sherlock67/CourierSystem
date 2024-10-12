@@ -13,3 +13,7 @@ C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\ne
 C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\refint\Courier.RepositoryManagement.dll
 C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\Courier.RepositoryManagement.pdb
 C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\obj\Debug\net6.0\ref\Courier.RepositoryManagement.dll
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\API.Settings.dll
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\Courier.ViewModel.dll
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\API.Settings.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.RepositoryManagement\bin\Debug\net6.0\Courier.ViewModel.pdb

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Courier.ViewModel.ViewModels
 {
-    public class LoginModel
+    public class LoginModel : Login
     {
         public int LoginID { get; set; } = 0;
         public int RoleID { get; set; } = 0;
