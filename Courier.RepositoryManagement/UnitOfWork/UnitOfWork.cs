@@ -20,11 +20,16 @@ namespace Courier.RepositoryManagement.UnitOfWork
         }
         private ModuleRepository _moduleRepository;
         public IModuleRepository ModuleRepository => _moduleRepository ?? (_moduleRepository = new ModuleRepository(_dbContext));
+        private MenuRepository _menuRepository;
+        public IMenuRepository MenuRepository => _menuRepository ?? (_menuRepository = new MenuRepository(_dbContext));
         private UserLoginRepository _loginRepository;
         private CustomerRepository _customerRepository;
         public ILoginRepository UserLoginRepository => _loginRepository ?? (_loginRepository = new UserLoginRepository(_dbContext));
 
         public ICustomerRepository CustomerRepository => _customerRepository ?? (_customerRepository = new CustomerRepository(_dbContext));
+
+        private MenuPermissionRepository _menuPermissionRepository;
+        public IMenuPermissionRepository MenuPermissionRepository => _menuPermissionRepository ?? (_menuPermissionRepository = new MenuPermissionRepository(_dbContext))
 
         public async Task CompleteAsync()
         {
