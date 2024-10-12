@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\API.Settings\API.Settings.csproj" />
     <ProjectReference Include="..\API.Utility\API.Utility.csproj" />
     <ProjectReference Include="..\Courier.RepositoryManagement\Courier.RepositoryManagement.csproj" />
     <ProjectReference Include="..\Courier.ViewModel\Courier.ViewModel.csproj" />

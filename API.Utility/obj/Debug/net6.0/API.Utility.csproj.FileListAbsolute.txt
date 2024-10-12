@@ -10,3 +10,8 @@ C:\Users\USER\source\repos\Courier.API\API.Utility\obj\Debug\net6.0\API.Utility.
 C:\Users\USER\source\repos\Courier.API\API.Utility\obj\Debug\net6.0\refint\API.Utility.dll
 C:\Users\USER\source\repos\Courier.API\API.Utility\obj\Debug\net6.0\API.Utility.pdb
 C:\Users\USER\source\repos\Courier.API\API.Utility\obj\Debug\net6.0\ref\API.Utility.dll
+C:\Users\USER\source\repos\Courier.API\API.Utility\bin\Debug\net6.0\API.Settings.dll
+C:\Users\USER\source\repos\Courier.API\API.Utility\bin\Debug\net6.0\Courier.ViewModel.dll
+C:\Users\USER\source\repos\Courier.API\API.Utility\bin\Debug\net6.0\API.Settings.pdb
+C:\Users\USER\source\repos\Courier.API\API.Utility\bin\Debug\net6.0\Courier.ViewModel.pdb
+C:\Users\USER\source\repos\Courier.API\API.Utility\obj\Debug\net6.0\API.Utility.csproj.CopyComplete

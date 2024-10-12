@@ -17,3 +17,7 @@ C:\Users\USER\source\repos\Courier.API\Courier.Business\obj\Debug\net6.0\Courier
 C:\Users\USER\source\repos\Courier.API\Courier.Business\obj\Debug\net6.0\ref\Courier.Business.dll
 C:\Users\USER\source\repos\Courier.API\Courier.Business\bin\Debug\net6.0\Courier.ViewModel.dll
 C:\Users\USER\source\repos\Courier.API\Courier.Business\bin\Debug\net6.0\Courier.ViewModel.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.Business\bin\Debug\net6.0\API.Settings.dll
+C:\Users\USER\source\repos\Courier.API\Courier.Business\bin\Debug\net6.0\API.Utility.dll
+C:\Users\USER\source\repos\Courier.API\Courier.Business\bin\Debug\net6.0\API.Settings.pdb
+C:\Users\USER\source\repos\Courier.API\Courier.Business\bin\Debug\net6.0\API.Utility.pdb

@@ -7,16 +7,9 @@ using Courier.ViewModel.ViewModels;
 using Courier.ViewModel.ViewModels.Customers;
 using Courier.ViewModel.ViewModels.Menu;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Reflection;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 
 namespace Courier.Business.Services
 {
@@ -166,7 +159,7 @@ namespace Courier.Business.Services
                     expireDate = DateTime.UtcNow.AddMinutes(StaticInfos.JwtKeyExpireIn);
                     token = await GenerateJSONWebToken(loginModel, StaticInfos.JwtKeyExpireIn);
 
-                    modules = await LoadModules(loggedUser.LoginId, Convert.ToInt32(userRole?.RoleId));
+                    modules = await LoadModules((int)(loggedUser.LoginId), Convert.ToInt32(userRole?.RoleId));
                     resstate = true;
                 }
 

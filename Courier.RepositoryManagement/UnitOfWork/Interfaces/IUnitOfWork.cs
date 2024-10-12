@@ -14,6 +14,8 @@ namespace Courier.RepositoryManagement.UnitOfWork.Interfaces
         IModuleRepository ModuleRepository { get; }
         IMenuRepository MenuRepository { get; }
         IMenuPermissionRepository MenuPermissionRepository { get; }
+        IRoleRepository RoleRepository { get; }
+        IUserRoleRepository UserRoleRepository { get; }
         Task CompleteAsync();
     }
 }
