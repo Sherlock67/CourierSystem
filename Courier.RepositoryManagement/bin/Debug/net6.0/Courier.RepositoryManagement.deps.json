@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "Courier.RepositoryManagement/1.0.0": {
         "dependencies": {
-          "Courier.DataAccess": "1.0.0"
+          "API.Settings": "1.0.0",
+          "Courier.DataAccess": "1.0.0",
+          "Courier.ViewModel": "1.0.0"
         },
         "runtime": {
           "Courier.RepositoryManagement.dll": {}
@@ -456,6 +458,14 @@
           }
         }
       },
+      "API.Settings/1.0.0": {
+        "dependencies": {
+          "Courier.ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "API.Settings.dll": {}
+        }
+      },
       "Courier.DataAccess/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.0",
@@ -463,6 +473,11 @@
         },
         "runtime": {
           "Courier.DataAccess.dll": {}
+        }
+      },
+      "Courier.ViewModel/1.0.0": {
+        "runtime": {
+          "Courier.ViewModel.dll": {}
         }
       }
     }
@@ -753,7 +768,17 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "API.Settings/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Courier.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Courier.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
