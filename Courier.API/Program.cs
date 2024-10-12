@@ -3,6 +3,7 @@ using Courier.RepositoryManagement.UnitOfWork.Interfaces;
 using Courier.RepositoryManagement.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using API.Settings;
+using Courier.API.ServiceRegister;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,15 @@ StaticInfos.FileUploadPath = _configuration.GetValue<string>("FileUploadPath");
 StaticInfos.OpenApiKey = _configuration.GetValue<string>("Open-Api-Key");
 
 builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CORSPolicy",
+        builder => builder
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials()
+        .SetIsOriginAllowed((hosts) => true));
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -32,6 +42,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+RegisteredServices.Register(builder);
 var app = builder.Build();
 StaticInfos.WebRootPath = app.Environment.WebRootPath;
 StaticInfos.ContentRootPath = app.Environment.ContentRootPath;
@@ -41,7 +52,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("CORSPolicy");
+app.UseAuthorization();
+app.UseAuthentication();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

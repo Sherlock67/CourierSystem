@@ -21,7 +21,7 @@ namespace Courier.RepositoryManagement.Repositories
         {
         }
         public async Task<Customer> CreateCustomer(CreateCustomerModel data, string? fileName, string? extension)
-        {
+         {
             Customer obj = new Customer()
             {
                 FullName = data.FirstName + " " + data.LastName,

@@ -6,10 +6,12 @@ using Courier.RepositoryManagement.UnitOfWork.Interfaces;
 using Courier.ViewModel.ViewModels;
 using Courier.ViewModel.ViewModels.Customers;
 using Courier.ViewModel.ViewModels.Menu;
+using Courier.ViewModel.ViewModels.UserRole;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using static API.Settings.StaticInfos;
 
 namespace Courier.Business.Services
 {
@@ -229,9 +231,69 @@ namespace Courier.Business.Services
             //throw new NotImplementedException();
         }
 
-        public Task<object?> UserRegistration(CustomerModel data)
+        public async Task<object?> UserRegistration(CustomerModel data)
         {
-            throw new NotImplementedException();
+            string message = string.Empty; bool resstate = false; Customer objCustomer = new(); int loginId = 0; string roleName = "";
+            try
+            {
+                var objCustomerEx = await _unitOfWork.CustomerRepository.GetCustomerInfo(data.Email);
+                if (objCustomerEx == null)
+                {
+                    objCustomer = await _unitOfWork.CustomerRepository.CreateCustomer(data, "", "");
+                    await _unitOfWork.CompleteAsync();
+                    if (objCustomer != null)
+                    {
+                        data.CustomerID = objCustomer.CustomerId;
+                        data.RoleId = (int)RoleType.User;//User role
+                        data.Password = data.Password;
+                        string hassPassword = CommonExt.Encryptdata(data.Password);
+                        var login = await _unitOfWork.UserLoginRepository.CreateUserLogin(data, hassPassword);
+                        await _unitOfWork.CompleteAsync();
+                        if (login != null)
+                        {
+                            loginId = (int)login.LoginId;
+                            CreateUserRole uRole = new CreateUserRole()
+                            {
+                                RoleId = Convert.ToInt32(data.RoleId),
+                                LoginId = (int)login.LoginId,
+                            };
+                            var userRole = await _unitOfWork.UserRoleRepository.CreateUserRole(uRole);
+                            await _unitOfWork.CompleteAsync();
+                            roleName = (await _unitOfWork.RoleRepository.GetRoleList()).Where(x => x.RoleId == data.RoleId).FirstOrDefault()?.RoleName;
+                        }
+                        message = "Created Successfully.";
+                        resstate = true;
+                    }
+                    else
+                    {
+                        message = "Failed."; resstate = false;
+                    }
+                }
+                else
+                {
+                    message = "Email is already exist.Please use unique email.";
+                    resstate = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                message = "Failed."; resstate = false;
+            }
+            return new
+            {
+                message,
+                isSuccess = resstate,
+                customerId = objCustomer?.CustomerId,
+                userName = objCustomer?.Email,
+                firstName = objCustomer?.FirstName,
+                lastName = objCustomer?.LastName,
+                fullName = objCustomer?.FullName,
+                email = objCustomer?.Email,
+                phone = objCustomer?.Phone,
+                roleName,
+                loginId
+            };
         }
         private async Task<List<vmModule>> LoadModules(int loginId, int roleId)
         {
