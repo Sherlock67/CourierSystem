@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Courier.ViewModel.ViewModels.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace Courier.ViewModel.ViewModels.Menu
         public int? ModuleSequence { get; set; }
 
         public bool? IsActive { get; set; }
-        //public List<vmMenu>? menus { get; set; }
+        public List<vmMenu>? menus { get; set; }
+    }
+    public class vmModuleSearch : CommonData
+    {
+
     }
 }

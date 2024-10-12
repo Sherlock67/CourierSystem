@@ -91,6 +91,29 @@
             "rid": "win"
           }
         }
+      },
+      "API.Settings/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Courier.ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/API.Settings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/API.Settings.dll": {}
+        }
+      },
+      "Courier.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Courier.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Courier.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -293,10 +316,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "API.Settings/1.0.0": {
+      "type": "project",
+      "path": "../API.Settings/API.Settings.csproj",
+      "msbuildProject": "../API.Settings/API.Settings.csproj"
+    },
+    "Courier.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Courier.ViewModel/Courier.ViewModel.csproj",
+      "msbuildProject": "../Courier.ViewModel/Courier.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "API.Settings >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.8.0"
     ]
   },
@@ -332,7 +366,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj": {
+              "projectPath": "C:\\Users\\USER\\source\\repos\\Courier.API\\API.Settings\\API.Settings.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
