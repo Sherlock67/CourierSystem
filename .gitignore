@@ -1,0 +1,32 @@
+# Visual Studio Code specific
+.vscode/
+
+# User-specific files
+*.suo
+*.user
+*.sln.DotSettings
+
+# Build artifacts
+bin/
+obj/
+
+# Packages
+packages/
+
+# Test results
+TestResults/
+
+# Log files
+*.log
+
+# Other common patterns
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Additional patterns for .NET Core projects
+.vs/
+FileContentIndex/
+v17

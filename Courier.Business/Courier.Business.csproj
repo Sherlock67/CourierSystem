@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\API.Settings\API.Settings.csproj" />
     <ProjectReference Include="..\API.Utility\API.Utility.csproj" />
     <ProjectReference Include="..\Courier.RepositoryManagement\Courier.RepositoryManagement.csproj" />
